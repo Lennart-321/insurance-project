@@ -10,14 +10,16 @@
   /* padding-top: 0px; */
 
   > div:has(h1) {
-    margin: 100px calc(15% + 20px) 20px calc(15% + 20px);
+    margin: 100px var(--marg-1) 20px var(--marg-1);
     > h1 {
       margin: 0;
     }
   }
 
   > p {
-    margin-inline: calc(15% + 20px);
+    margin-inline: var(--marg-1);
+    color: #777;
+
     > span {
       color: white;
     }
@@ -29,8 +31,9 @@
     right: 15px;
     width: 60%;
   }
-  > div:has(button) {
-    margin: 60px calc(15% + 20px) 20px calc(15% + 20px);
+  /* > div:has(button) */
+  > button {
+    margin: 60px var(--marg-1) 20px var(--marg-1);
   }
 
   position: relative;
@@ -79,7 +82,8 @@
   width: 100%;
   height: 650px;
   > * {
-    margin-inline: 10%;
+    /* margin-inline: 10%; */
+    margin-inline: var(--marg-1);
     margin-top: 80px;
   }
   > h1 {
@@ -134,6 +138,7 @@
     margin-inline: 20px;
     font-size: 15px;
     line-height: 22px;
+    color: #777;
   }
 }
 
@@ -214,9 +219,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  > h1 {
-    /* padding-top: 100px; */
-  }
+  /* > h1 {
+    padding-top: 100px;
+  } */
 }
 .works article > h2 {
   /* margin-top: 30px; */
@@ -232,7 +237,7 @@
   text-align: center;
   margin: 0;
   padding-top: 150px;
-  padding-inline: 25px;
+  padding-inline: 16%;
   font-size: 20px;
   color: #444;
 }
@@ -265,4 +270,9 @@
     font-weight: bolder;
     color: #111;
   }
+}
+
+nav a:first-of-type {
+  color: #000;
+  font-weight: bold;
 }
