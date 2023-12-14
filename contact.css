@@ -145,3 +145,52 @@ nav a:last-of-type {
   color: #000;
   font-weight: bold;
 }
+
+@media screen and (max-width: 650px) {
+  nav a:last-of-type {
+    background-color: #ddd;
+  }
+
+  .message {
+    /* grid-template-columns: 1fr;
+  grid-template-rows: 120px 35px 50px 35px 200px 80px; */
+    display: flex;
+    flex-direction: column;
+
+    height: 700px;
+
+    > * {
+      margin-inline: 20px;
+    }
+    > h1 {
+      padding: 20px;
+    }
+    > textarea {
+      height: 150px;
+    }
+    > button {
+      margin-top: 40px;
+    }
+  }
+
+  .visit {
+    /* position: absolute; */
+    top: -130px;
+    left: calc(50% - 195px);
+    /* left: auto;
+    right: auto; */
+  }
+
+  .hello h1 {
+    position: static;
+    display: inline-block;
+
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 50%;
+  }
+
+  .hello img {
+    right: 20px;
+  }
+}
